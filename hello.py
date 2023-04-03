@@ -13,4 +13,4 @@ print(part[1])
 nombre = nombre.lower()
 print(nombre.replace(" ","-"))
 apellidos = ["manco", "cartagena"]
-print(" ".join(apellidos))
+print(" 0 ".join(apellidos))
