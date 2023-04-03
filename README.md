@@ -15,3 +15,4 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 editado
+## Debe validar que todos los cambios sean correctos
