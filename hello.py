@@ -1,0 +1,16 @@
+# print("hello Word")
+# from datetime import date
+# a= date.today()
+# print(date.ctime(a))
+# print(date.isocalendar(a))
+# primer_num= int(input("ingresa el primer númeo: "))
+# second_num = int(input("ingresa es segundo numero: "))
+# print(primer_num+second_num)
+nombre = "pablo andres: manco cartagena.".title()
+print(len(nombre))
+part = nombre.split(":")
+print(part[1])
+nombre = nombre.lower()
+print(nombre.replace(" ","-"))
+apellidos = ["manco", "cartagena"]
+print(" ".join(apellidos))
