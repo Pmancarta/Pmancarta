@@ -52,3 +52,5 @@ for i in gravity_on_planets:
 print(pesoCar)
 print(min(pesoCar))
 print(max(pesoCar))
+
+print(planets[0:5])
