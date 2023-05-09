@@ -67,3 +67,4 @@ for i in gravity_on_planets:
 planets.sort()
 print(planets)
 print(planets.index("Mercurio"))
+print(planets[0:2])
