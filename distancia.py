@@ -17,8 +17,10 @@
 
 import numpy as np
 import pandas as pd
+
 print(
-    "\n\nLes dejo la diferencia entre la tierra y los otros planetas del sistema solar.\n")
+    "\n\nLes dejo la diferencia entre la tierra y los otros planetas del sistema solar.\n"
+)
 
 
 # planetas = {"Mercurio": 57909227, "Venus":108209475, "Tierra": 149598262, "Marte":227943824, "Júpiter":778340821, "Saturno":1426666422, "Urano":22870658186, "Neptuno":4498396441, "Pluton":5906376272,}
@@ -42,13 +44,53 @@ print(
 #     for distan in planet:
 #         print(distan)
 
-planets = ["Mercurio", "Venus", "Tierra", "Marte",
-           "Júpiter", "Saturno", "Urano", "Neptuno"]
+planets = [
+    "Mercurio",
+    "Venus",
+    "Tierra",
+    "Marte",
+    "Júpiter",
+    "Saturno",
+    "Urano",
+    "Neptuno",
+]
 gravity_on_planets = [0.378, 0.907, 1, 0.377, 2.36, 0.916, 0.889, 1.12]
 
 pesoCar = []
 for i in gravity_on_planets:
-    pesoCar.append(round(i*12650, 2))
-print(pesoCar)
-print(min(pesoCar))
-print(max(pesoCar))
+    pesoCar.append(round(i * 12650, 2))
+# print(pesoCar)
+# print(min(pesoCar))
+# print(max(pesoCar))
+
+# print(planets[0:5])
+planets.sort()
+print(planets)
+print(planets.index("Mercurio"))
+print(planets[0:2])
+
+planet_moons = {
+    "mercury": 0,
+    "venus": 0,
+    "earth": 1,
+    "mars": 2,
+    "jupiter": 79,
+    "saturn": 82,
+    "uranus": 27,
+    "neptune": 14,
+    "pluto": 5,
+    "haumea": 2,
+    "makemake": 1,
+    "eris": 1,
+}
+moons = planet_moons.values()
+total_planets = len(planet_moons.keys())
+
+total_moons = 0
+
+for moon in moons:
+    total_moons = total_moons + moon
+
+average = total_moons / total_planets
+
+print(f"Each planet has an average of {average} moons")

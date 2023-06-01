@@ -11,6 +11,6 @@ print(len(nombre))
 part = nombre.split(":")
 print(part[1])
 nombre = nombre.lower()
-print(nombre.replace(" ","-"))
+print(nombre.replace(" ", "-"))
 apellidos = ["manco", "cartagena"]
 print(" 0 ".join(apellidos))
